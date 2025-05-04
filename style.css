@@ -1,0 +1,236 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Police */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* En-tête avec logo */
+header#hero-section {
+  background: url('Images/Diasporama/diapo1.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 7rem 2rem;
+  position: relative;
+  color: white;
+}
+
+.logo {
+  width: 60px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+}
+
+/* Titre */
+header h1 {
+  font-size: 3.5rem;
+  margin-top: 2px;
+}
+
+/* Navigation principale */
+nav {
+  background-color: #2f7230;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #256024;
+  border-radius: 5px;
+}
+
+/* Filtrage des catégories */
+.filtre-categorie {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  background-color: #e0f2e9;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  gap: 10px;
+  width: 100%;
+}
+
+.filtre-categorie button {
+  background-color: #2f7230;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.filtre-categorie button:hover {
+  background-color: #256024;
+}
+
+/* Section produits */
+.produits {
+  padding: 2rem;
+}
+
+.produits h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2f7230;
+}
+
+/* Grille des produits */
+.grille-produits {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Bulle de produit */
+.bulle-produit {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.bulle-produit:hover img {
+  transform: scale(1.05);
+}
+
+/* Nom du produit toujours visible */
+.overlay h3 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  background-color: rgba(47, 114, 48, 0.8);
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Bouton au survol */
+ .btn-ajouter{
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+
+}
+
+.bulle-produit:hover .btn-ajouter {
+  opacity: 1;
+}
+
+/* Bouton commander */
+.btn-ajouter {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-ajouter:hover {
+  background-color: #cc5200;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.pagination button {
+  background-color: #2f7230;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button.active,
+.pagination button:hover {
+  background-color: #256024;
+}
+
+/* Pied de page */
+footer {
+  background-color: #2f7230;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+footer .bande-annonce {
+  margin-top: 0.5rem;
+  background-color: #21621e;
+  padding: 0.5rem;
+}
+
+/* Responsive : Menu hamburger (si besoin) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filtre-categorie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grille-produits {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

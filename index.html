@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agro-Eco Services Boutique</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- En-tête avec diaporama -->
+  <header id="hero-section">
+    <img src="Images/Logo/Logo.jpg" alt="Logo Agro-Eco" class="logo" />
+    <h1>Agro-Eco Services </h1>
+    <h1>Market</h1>
+  </header>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="panierbio/panier-bio.html">Panier bio</a></li>
+      <li><a href="engraisorganique/engrais-organique.html">Engrais organique</a></li>
+      <li><a href="#">Bio fertilisant</a></li>
+      <li><a href="#">Larves de mouches</a></li>
+      <li><a href="conférences/conference-zome.html">Conférence Zome</a></li>
+      <li><a href="#">Parler à un conseiller</a></li>
+    </ul>
+  </nav>
+
+  <!-- Produits -->
+  <section class="produits">
+    <h2>🌿 Nos Produits</h2>
+
+    <div class="filtre-categorie">
+      <button onclick="filtrerProduits('tous')">Tous</button>
+      <button onclick="filtrerProduits('panier')">Paniers bio</button>
+      <button onclick="filtrerProduits('engrais')">Engrais organiques</button>
+      <button onclick="filtrerProduits('larves')">Larves de mouches</button>
+    </div>
+  </section>
+<section class="produits">
+    <div class="grille-produits">
+
+      <!-- Paniers bio -->
+      <div class="bulle-produit panier">
+        <div class="image-container">
+          <img src="panierbio/images/panier1.jpg" alt="Panier Bio 1">
+          <div class="overlay">
+            <h3>Panier 1</h3>
+            <button class="btn-ajouter">Commander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bulle-produit panier">
+        <div class="image-container">
+          <img src="panierbio/images/panier2.jpg" alt="Panier Bio 2">
+          <div class="overlay">
+            <h3>Panier 2</h3>
+            <button class="btn-ajouter">Commander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bulle-produit panier">
+        <div class="image-container">
+          <img src="panierbio/images/panier3.jpg" alt="Panier Bio 3">
+          <div class="overlay">
+            <h3>Panier 3</h3>
+            <button class="btn-ajouter">Commander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bulle-produit panier">
+        <div class="image-container">
+          <img src="panierbio/images/panier1.jpg" alt="Panier personnel">
+          <div class="overlay">
+            <h3>Panier personnel</h3>
+            <button class="btn-ajouter">Constituer</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engrais -->
+      <div class="bulle-produit engrais">
+        <div class="image-container">
+          <img src="engraisorganique/images/engrais1.jpg" alt="Maggot-compost">
+          <div class="overlay">
+            <h3>Maggot-compost</h3>
+            <button class="btn-ajouter">Commander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bulle-produit engrais">
+        <div class="image-container">
+          <img src="engraisorganique/images/engrais2.jpg" alt="Vermicompost">
+          <div class="overlay">
+            <h3>Vermicompost</h3>
+            <button class="btn-ajouter">Commander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bulle-produit engrais">
+        <div class="image-container">
+          <img src="engraisorganique/images/engrais3.jpg" alt="Bokashi">
+          <div class="overlay">
+            <h3>Bokashi</h3>
+            <button class="btn-ajouter">Commander</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Larves -->
+      <div class="bulle-produit larves">
+        <div class="image-container">
+          <img src="Images/Diasporama/images16.jpg" alt="Larves fraîches">
+          <div class="overlay">
+            <h3>Larves de mouches fraîches</h3>
+            <button class="btn-ajouter">Ajouter</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bulle-produit larves">
+        <div class="image-container">
+          <img src="Images/Diasporama/images16.jpg" alt="Larves séchées">
+          <div class="overlay">
+            <h3>Larves de mouches séchées</h3>
+            <button class="btn-ajouter">Ajouter</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bulle-produit larves">
+        <div class="image-container">
+          <img src="images/larves1.jpg" alt="Œufs de BSF">
+          <div class="overlay">
+            <h3>Œufs de BSF</h3>
+            <button class="btn-ajouter">Ajouter</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<div class="pagination">
+  <button class="active">1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>Suivant</button>
+</div>
+
+  </section>
+
+
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 Agro-Eco Services</p>
+    <div class="bande-annonce">
+      <marquee behavior="scroll" direction="left">Promotion spéciale cette semaine sur les paniers bio et fertilisants naturels !</marquee>
+    </div>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>

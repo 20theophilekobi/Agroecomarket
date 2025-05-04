@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panier Bio - Agro-Eco Services</title>
+  <link rel="stylesheet" href="panier-bio.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img src="../Images/Logo/Logo.jpg" alt="Logo" class="logo">
+    <h1>Panier Bio</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="#">Panier bio</a></li>
+      <li><a href="#">Engrais organique</a></li>
+      <li><a href="#">Bio fertilisant</a></li>
+      <li><a href="#">Larves de mouches</a></li>
+      <li><a href="#">Conférence Zome</a></li>
+      <li><a href="#">Parler à un conseiller</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="filtres">
+      <label for="categorie">Filtrer par catégorie :</label>
+      <select id="categorie">
+        <option value="tous">Tous</option>
+        <option value="fruits">Fruits</option>
+        <option value="legumes">Légumes</option>
+        <option value="herbes">Herbes</option>
+      </select>
+    </section>
+
+    <section class="produits" id="produits-container">
+      <!-- Les produits s'affichent ici via JavaScript -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Agro-Eco Services</p>
+  </footer>
+
+  <script src="panier-bio.js"></script>
+</body>
+</html>
